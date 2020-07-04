@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Confidence interval | Statistical Methods</title>
+  <meta name="description" content="1 Confidence interval | Statistical Methods" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 Confidence interval | Statistical Methods" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 Confidence interval | Statistical Methods" />
+  
+  
+  
+
+<meta name="author" content="Rushad Faridi, PhD" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="hypothesis-testing.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="CSS/style_SM_book.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="confidence-interval.html"><a href="confidence-interval.html"><i class="fa fa-check"></i><b>1</b> Confidence interval</a></li>
+<li class="chapter" data-level="2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html"><i class="fa fa-check"></i><b>2</b> Hypothesis testing</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistical Methods</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="confidence-interval" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Confidence interval</h1>
+<p>The real life problem.May be I should call it Kuddus shaheber porishonkhan dorshon?</p>
+<p>Suppose world bank wants to do a study, after the Bangladesh turned into middle income country, what happened to the income of Dhaka city. so we want to know the average income, how to find it?</p>
+<p>By a sample, what will be the sample size, that we will discuss little bit later but say we found it to be 5000. Suppose I have survey firm, I got high connections and got the deal. I thought hey I live in Zigatala, how about go around and ask 5000 people in zigatala, what is wrong in that?</p>
+<p>It will not be representative, it will be a biased sample. What does it mean to be biased? it does not tend to truth. It can be greater than the true value, postiviely biased. It can be less than the true value, negatively biased. Then what will be the right way to pick the sample?</p>
+<p>Random sampling, what does it mean to be random sampling, equal probability of every one coming up in the population area. Then it will be representative. Now let’s say we found the average income of 5000 sample is monthly 18000 taka. What we do with that number?</p>
+<p>We run to the mission head of WB and say hey we are done, here is monthly 18000 taka. How come we can rely on just 5000 fromm 2 crore people? Being smart, he asks how about if we took another 5000, will we end up with still 18000? If you can’t answer these questions, your bill is suspended and you go home.</p>
+<p>Then you open up your statistics book and come up with a concept called sampling distribution.Distribution of sample statistics.There can be many samples and from each of it we can find the average.The probability distribution of sample average is called sampling distribution.</p>
+<p>What is probability? The science of dealing with uncertainty.Example please:
+* Insurance
+* Credit loan
+* Flight booking</p>
+<p>How is the probability relevant in the case of Mr kuddus sampling above in WB study?</p>
+<p>It is relevant, because in true we are dealing with a theoretical world which consistst of population but in real world, we are dealing with sample. from real world, we are trying to have an idea about theoretical world.
+but in real world, we have considerable bit of uncertainty becaue of limited amount of error. we are not 100 percent sure that we will be able
+to estimate the true value of the parameter. do deal with this uncertainty we will have to deal with probability theory.But what about probability distribution?</p>
+<p>What is that? how do you distribute probability?</p>
+<p>For examaple I have 10 envelops with 1 to 10 numbers above indicating number of thousand taka note inside. Then, i want to distribute the money, how do i distribute? I know zahed, give him 10, nahin faryana our students give them another 4 3. But if i want to be impartial what I want to be doing?</p>
+<p>So each of the 10 comes should have equal chance. It will be done by lottery How will the prob dist look like? a flat curve.It’s a probability distribution Now go back to text book probability distribution</p>
+<p>coin toss</p>
+<p>dice roll</p>
+<p>At this point, I will just go to the need for probability html file</p>
+<p>start with slide number 15, coin flips</p>
+<p>flipped coin 10 times, did not 6 H out of 10
+but theorteical world says it will be 5 of 10</p>
+<p>how to reconcile</p>
+<p>Now comes the bottle cap, red side, silver side
+after 10 flips we found 4 out 10,</p>
+<p>what will happen in the theoretical world?</p>
+<p>now go to some probability basics</p>
+<p>Experiment: flip two coins</p>
+<p>calculate probability</p>
+<p>probability of sample space</p>
+<p>Random variable, what is that</p>
+<p>what is variable, something which value varies</p>
+<p>why random variable?</p>
+<p>the value of the variable is randomly assigned</p>
+<p>Y = no. of heads in two coin toss experiment</p>
+<p>sample space
+probability of sample space</p>
+<p>some probability calculation scenario</p>
+<p>meaning of probability
+theoretical
+long run
+subjective</p>
+<p>Second example:</p>
+<p>bottle cap
+here the probability is not even
+so important
+so how to calculate joint probability</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="hypothesis-testing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

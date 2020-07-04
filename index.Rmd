@@ -1,0 +1,35 @@
+---
+title: "Statistical Methods"
+author: "Rushad Faridi, PhD"
+site: bookdown::bookdown_site
+documentclass: book
+output: 
+  bookdown::gitbook:
+    css: "./CSS/style_SM_book.css"
+---
+
+# Preface{-}
+
+```{r setup, include=FALSE}
+library(knitr)
+#options(htmltools.dir.version = FALSE)
+opts_chunk$set(echo=TRUE, 
+               eval=TRUE, 
+               message=FALSE, 
+               comment=NA, 
+               warning=FALSE,
+	       class.source="coding-style",
+	       cache=F,
+               fig.width=6, fig.asp=.618, 
+               fig.align="center", 
+               out.width="100%")
+
+```
+
+
+
+```{r,include=FALSE}
+library(tidyverse)
+```
+
+

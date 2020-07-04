@@ -1,0 +1,45 @@
+
+.book .book-body .page-wrapper .page-inner section.normal pre {
+      background: #e1fecc;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre>code {
+    font-family: "Source Code Pro";
+    font-size: 12pt;
+}
+
+
+.book .book-body .page-wrapper .page-inner section.normal code {
+    font-family: "Source Code Pro";
+    background-color: #d0ccfe ;
+}
+
+
+h1, h2, h3, h4, p {
+    font-family: "Tinos";
+}
+
+.coding-style {
+    background: #d0ccfe;
+}
+
+p{
+    font-size: 14pt;
+}
+
+
+pp {
+    font-size: 16pt;
+    text-align: justify;
+    align-content: center;
+}
+
+
+
+ul li {
+    font-family: "Tinos";
+    font-size: 14pt;
+}
+
+
+
